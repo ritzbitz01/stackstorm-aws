@@ -1,0 +1,34 @@
+description: ''
+enabled: true
+entry_point: run.py
+name: ec2_describe_images
+parameters:
+  action:
+    default: describe_images
+    immutable: true
+    type: string
+  cls:
+    default: EC2Connection
+    immutable: true
+    type: string
+  dry_run:
+    type: boolean
+  module_path:
+    default: boto.ec2.connection
+    immutable: true
+    type: string
+  no_dry_run:
+    type: boolean
+  image_ids:
+    type: array
+  owners:
+    type: array
+  executable_users:
+    type: array
+  filters:
+    type: array
+  cli_input_json:
+    type: string
+  generate_cli_skeleton:
+    type: string
+runner_type: run-python
