@@ -7,14 +7,10 @@ parameters:
     default: describe_images
     immutable: true
     type: string
-  cls:
-    default: EC2Connection
-    immutable: true
-    type: string
   dry_run:
     type: boolean
   module_path:
-    default: boto.ec2.connection
+    default: boto.ec2
     immutable: true
     type: string
   no_dry_run:
@@ -26,7 +22,7 @@ parameters:
   executable_users:
     type: array
   filters:
-    type: dict
+    type: array
   cli_input_json:
     type: string
   generate_cli_skeleton:
