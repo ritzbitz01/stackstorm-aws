@@ -26,7 +26,7 @@ parameters:
   executable_users:
     type: array
   filters:
-    type: array
+    type: dict
   cli_input_json:
     type: string
   generate_cli_skeleton:
